@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Guitar Catalog</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" />  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>  
+<body>
+  <div class="container">
+    <section class="section content">
+        <h1 class="title">GUITAR CATALOG</h1>
+        <div class="box has-text-right">
+            <div class="select">
+                <select id="filter">
+                    <option selected disabled value="">Ordenamiento</option>
+                    <option value="price-asc">Precios más bajos</option>
+                    <option value="price-desc">Precios más altos</option>
+                </select>
+            </div>
+            <div class="select">
+                <select id="exchangeRate">
+                    <option selected disabled value="">Moneda</option>
+                    <option value="en-US">Dólares americanos</option>
+                    <option value="es-PE">Nuevo Soles</option>
+                </select>
+            </div>
+        </div>
+        <div id="catalog">                
+        </div>
+    </section>
+  </div>
+  <script src="js/catalog.js"></script>
+  <script src="js/index.js"></script>    
+</body>
+</html>
